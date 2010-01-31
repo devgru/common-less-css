@@ -29,6 +29,12 @@
     -webkit-box-shadow: @h @v @blur @color;
 }
 
+.inset-box-shadow (@h: 0, @v: 0, @blur: 0, @color: black) {
+    box-shadow: inset @h @v @blur @color;
+    -moz-box-shadow: inset @h @v @blur @color;
+    -webkit-box-shadow: inset @h @v @blur @color;
+}
+
 .box-sizing (@sizing: border-box) {
     box-sizing: @sizing;
     -moz-box-sizing: @sizing;
