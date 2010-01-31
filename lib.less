@@ -9,6 +9,8 @@
     -webkit-opacity: @opacity;
 }
 
+/* box decoration */
+
 .rounded-corners (@radius: 0) {
     border-radius: @radius;
     -moz-border-radius: @radius;
@@ -27,6 +29,15 @@
     -webkit-box-shadow: @h @v @blur @color;
 }
 
+.box-sizing (@sizing: border-box) {
+    box-sizing: @sizing;
+    -moz-box-sizing: @sizing;
+    -webkit-box-sizing: @sizing;
+    -ms-box-sizing: @sizing;
+}
+
+/* text decoration */
+
 .text-blur (@blur: 0) {
     text-shadow: 0 0 @blur;
     -moz-text-shadow: 0 0 @blur;
@@ -39,10 +50,4 @@
     -webkit-text-shadow: @h @v @blur @color;
 }
 
-.box-sizing (@sizing: border-box) {
-    box-sizing: @sizing;
-    -moz-box-sizing: @sizing;
-    -webkit-box-sizing: @sizing;
-    -ms-box-sizing: @sizing;
-}
 
