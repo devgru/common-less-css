@@ -27,6 +27,12 @@
     -webkit-box-shadow: @h @v @blur @color;
 }
 
+.text-blur (@blur: 0) {
+    text-shadow: 0 0 @blur;
+    -moz-text-shadow: 0 0 @blur;
+    -webkit-text-shadow: 0 0 @blur;
+}
+
 .text-shadow (@h: 0, @v: 0, @blur: 0, @color: black) {
     text-shadow: @h @v @blur @color;
     -moz-text-shadow: @h @v @blur @color;
